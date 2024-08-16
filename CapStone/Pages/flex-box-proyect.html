@@ -11,6 +11,8 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        margin-top: 0;
+        padding-top: 0;
       }
       ul{
         padding-inline-start: 0;
@@ -37,6 +39,12 @@ box-shadow :	0px 0px 5px #fe21a2,
 color:white;
 transition: 1s ease-in-out;
 
+}
+a:hover{
+box-shadow: 0px 0px 5px #fa3baa,
+            0px 0px 30px #fa3baa,
+            0px 0px 90px #fa3baa ;
+            transition: 1s ease-in-out;
 }
 
     
@@ -110,16 +118,41 @@ row-gap: 1rem;
        
        }
       }
+      .header{
+        display: flex;
+        justify-content: space-evenly;
+        
+        margin: 3px;
+     
+      }
+      .nav{
+        
+        background-color: #ffc4f3;
+        border-radius: 10px;
+      }
+      header + ul{
+        margin: 0;
+        padding: 0;
+        
+      }
+      .nav,a{
+        
+        list-style: none;
+        text-decoration: none;
+        flex-basis: auto;
+        
+      }
+      
     </style>
   </head>
   <header>
-    <ul>
+    <ul class="header">
   
-        <li><a href="./birthday.html">My birthday Proyect</a></li>
-        <li><a href="./contacme.html">Contact Me</a></li>
-        <li><a href="./ranking.html">Rankin Proyect</a></li>
-        <li><a href="./flex-box-proyect.html">Practice Flex Box</a></li>
-        <li><a href="../../index.html">Home</a></li>
+        <li class="nav"><a href="./birthday.html">My birthday Proyect</a></li>
+        <li class="nav"><a href="./contacme.html">Contact Me</a></li>
+        <li class="nav"><a href="./ranking.html">Rankin Proyect</a></li>
+        <li class="nav"><a href="./flex-box-proyect.html">Practice Flex Box</a></li>
+        <li class="nav"><a href="../../index.html">Home</a></li>
     </ul>
 </header>
   <body>
