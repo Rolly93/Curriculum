@@ -5,32 +5,56 @@ html{
 }
 @media (max-width : 425px ) {
     .profile-pic{
-        border-radius: 50%;
+        border-radius: 50%;      
         
     }
-    *{
-        border: 1px #1a0c96 solid;
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+}
+    body{
+        background:linear-gradient( to left top,  #f2d3c4 ,#FF9E7E, #f2d3c4 ,#FF9E7E, #f2d3c4 ,#FF9E7E);
     }
+ .nav{
+    display: flex;
+    width: 100%;
+
+ }
     .nav-bar{
+        display: flex;
+        align-items: center;
         list-style: none;
         padding: 5px;
         margin: 5px ;
         border: .5px solid black;
-        border-radius: 25%;    
+        border-radius: 25%;
+        background-color: #616849;
+               
+    }
+    .nav-bar a{
+        text-decoration: none;
+        color: white;
+
     }
     ul,li{
         list-style: none;
         padding-left: 0 ;
+    }
+    h2{
+        display: block;
+        box-shadow: rgba(0, 253, 13, 0.541) 0px 30px 60px -12px inset, rgba(196, 242, 222, 0.95) 0px 18px 36px -18px inset;
     }
 
 .presentacion{
     flex-wrap: wrap;
     max-width: 425px;
     grid-area: presentacion;
-    background-color:rgba(68, 118, 151, .6);
     padding : 10px;
 }
-
+*{
+    border: 1px #1a0c96 solid;
+}
 
 .container{
     display: grid;
@@ -44,6 +68,10 @@ html{
   
     
 }
+table.work,::after{
+    box-sizing: border-box;
+
+}
 
 .nav{
 
@@ -53,12 +81,24 @@ html{
 }
 .work{
     grid-area: work;
+    overflow:scroll;
+    
 }
 .skill{
+    
     grid-area: skill;
 }
 .award{
     grid-area: award;
 }
+li img{
+    width: 100px;
+    float:right;
+    filter: drop-shadow( 0px 0px 5px rgb(15, 15, 15));
+}
+li strong{
+    float: both;
+}
 
 }
+
