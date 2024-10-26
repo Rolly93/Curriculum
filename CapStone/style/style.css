@@ -1,0 +1,64 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+@media (max-width : 425px ) {
+    .profile-pic{
+        border-radius: 50%;
+        
+    }
+    *{
+        border: 1px #1a0c96 solid;
+    }
+    .nav-bar{
+        list-style: none;
+        padding: 5px;
+        margin: 5px ;
+        border: .5px solid black;
+        border-radius: 25%;    
+    }
+    ul,li{
+        list-style: none;
+        padding-left: 0 ;
+    }
+
+.presentacion{
+    flex-wrap: wrap;
+    max-width: 425px;
+    grid-area: presentacion;
+    background-color:rgba(68, 118, 151, .6);
+    padding : 10px;
+}
+
+
+.container{
+    display: grid;
+    border: 1px solid rgb(255, 4, 4);
+    max-width: 425px;
+}   
+.content{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 425px;
+  
+    
+}
+
+.nav{
+
+    grid-area: nav;
+    transition: ease-in-out ;
+    margin-top: 10px;
+}
+.work{
+    grid-area: work;
+}
+.skill{
+    grid-area: skill;
+}
+.award{
+    grid-area: award;
+}
+
+}
