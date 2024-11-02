@@ -19,7 +19,6 @@ li , ul,ol{
 
     .container{
         display: grid;
-        border: 1px solid rgb(255, 4, 4);
         max-width: 425px;
         grid-template-areas: 
         "nav"
