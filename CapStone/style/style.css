@@ -3,102 +3,139 @@ html{
     padding: 0;
     font-size: 16px;
 }
-@media (max-width : 425px ) {
-    .profile-pic{
-        border-radius: 50%;      
-        
-    }
+li , ul,ol{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    padding: 0;
 
-.profile-container{
-    display: flex;
-    justify-content: center;
 }
+@media (max-width : 425px ) {
+    
     body{
         background:linear-gradient( to left top,  #f2d3c4 ,#FF9E7E, #f2d3c4 ,#FF9E7E, #f2d3c4 ,#FF9E7E);
     }
- .nav{
-    display: flex;
-    width: 100%;
 
- }
+
+    .container{
+        display: grid;
+        border: 1px solid rgb(255, 4, 4);
+        max-width: 425px;
+        grid-template-areas: 
+        "nav"
+        "presentacion"
+        "escolaridad"
+        "work"
+        "skill"
+        "award"
+        "footer";
+    }  
     .nav-bar{
         display: flex;
         align-items: center;
+        text-align: center;
         list-style: none;
-        padding: 5px;
-        margin: 5px ;
-        border: .5px solid black;
         border-radius: 25%;
         background-color: #616849;
-               
+        padding: 3px;
+        margin: 5px;               
     }
-    .nav-bar a{
+     .nav-bar a{        
         text-decoration: none;
         color: white;
+    }
+
+
+    .presentacion{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: presentacion;
+    justify-content:space-around;    
+    padding: 10px;
+    }
+    .work ul{
+        padding-top: 10px;
+        padding-bottom: 10px;
 
     }
-    ul,li{
-        list-style: none;
-        padding-left: 0 ;
+    .profile-container{
+        margin-bottom: 10px;
+        margin-top: -10px;
     }
+
+    .profile-pic{
+        border-radius: 50%;
+    }
+
     h2{
-        display: block;
         box-shadow: rgba(0, 253, 13, 0.541) 0px 30px 60px -12px inset, rgba(196, 242, 222, 0.95) 0px 18px 36px -18px inset;
     }
 
-.presentacion{
-    flex-wrap: wrap;
-    max-width: 425px;
-    grid-area: presentacion;
-    padding : 10px;
+table{
+    text-align: center;
+    border-collapse: collapse;
+    
+    }
+th,td{
+    border: solid 1px rgb(223, 255, 150);
+    padding: 8px;
+    background-color: rgba(2, 2, 0, 0.589);
+    color: rgb(255, 255, 255);
+    
 }
-*{
-    border: 1px #1a0c96 solid;
-}
-
-.container{
-    display: grid;
-    border: 1px solid rgb(255, 4, 4);
-    max-width: 425px;
-}   
-.content{
+header{
     display: flex;
-    flex-wrap:wrap;
-    max-width: 425px;
-  
-    
-}
-table.work,::after{
-    box-sizing: border-box;
-
-}
-
-.nav{
-
     grid-area: nav;
-    transition: ease-in-out ;
-    margin-top: 10px;
 }
+.escolaridad{
+    grid-area: escolaridad;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.job{
+
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    background-color: #f2d3c4;
+    margin: 5px;
+
+}
+.job div  {
+    align-self: center;
+}
+
+
 .work{
-    grid-area: work;
-    overflow:scroll;
-    
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: work;    
+    padding: 10px;    
+    justify-content: center;
+
+     
 }
 .skill{
     
     grid-area: skill;
+    padding: 10px;
+
 }
 .award{
     grid-area: award;
+    padding: 10px;
+
 }
-li img{
+footer{
+    grid-area: footer;
+    padding: 10px;
+
+}
+ol img{
     width: 100px;
-    float:right;
     filter: drop-shadow( 0px 0px 5px rgb(15, 15, 15));
 }
-li strong{
-    float: both;
 }
-
-}
-
