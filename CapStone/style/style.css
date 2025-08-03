@@ -213,25 +213,25 @@ body {
         margin: 10px; 
         border-radius: 5px; 
     }
-
+    
     .left-column,
     .right-column {
         width: 100%; 
         padding: 20px; 
     }
-
+    
     .profile-section {
         margin-bottom: 20px;
     }
-
+    
     .profile-section h1 {
         font-size: 1.8em; 
     }
-
+    
     .profile-section h2 {
         font-size: 1em; 
     }
-
+    
     .contact-section h3,
     .education-section h3,
     .award-section h3,
@@ -241,69 +241,73 @@ body {
         padding: 8px 10px;
         margin-bottom: 15px;
     }
-
+    
     .contact-section ul li {
         justify-content: center; 
         text-align: center;
     }
-
+    
     .education-item,
     .award-item,
     .experience-item , .proyect-item,.leguage-item{
         margin-bottom: 15px;}
-
-    .skill-item {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 10px;
+        
+        .skill-item {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .skill-item p {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+        
+        .skill-bar {
+            width: 100%; 
+            margin-left: 0; 
+        }
     }
-
-    .skill-item p {
-        margin-bottom: 5px;
-        font-size: 0.9em;
-    }
-
-    .skill-bar {
-        width: 100%; 
-        margin-left: 0; 
-    }
+    
+    @media (max-width: 480px) {
+        body {
+            padding: 5px;
+        }
+        
+        .resume-container {
+            margin: 5px;
+            border-radius: 0;
+        }
+        
+        .left-column,
+        .right-column {
+            padding: 15px; 
+        }
+        
+        .profile-picture {
+            width: 100px; 
+            height: 100px;
+        }
+        
+        .profile-section h1 {
+            font-size: 1.5em;
+        }
+        
+        .profile-section h2 {
+            font-size: 0.9em; 
+        }
+        
+        .profile-section p,
+        .contact-section ul li,
+        .education-item p,.leguage-item p,
+        .award-item p,
+        .experience-item p,
+        .experience-item ul li,
+        .skill-item p , .proyect-item p , .proyect-item ul li{
+            font-size: 0.8em;
+        }
 }
-
-@media (max-width: 480px) {
-    body {
-        padding: 5px;
-    }
-
-    .resume-container {
-        margin: 5px;
-        border-radius: 0;
-    }
-
-    .left-column,
-    .right-column {
-        padding: 15px; 
-    }
-
-    .profile-picture {
-        width: 100px; 
-        height: 100px;
-    }
-
-    .profile-section h1 {
-        font-size: 1.5em;
-    }
-
-    .profile-section h2 {
-        font-size: 0.9em; 
-    }
-
-    .profile-section p,
-    .contact-section ul li,
-    .education-item p,.leguage-item p,
-    .award-item p,
-    .experience-item p,
-    .experience-item ul li,
-    .skill-item p , .proyect-item p , .proyect-item ul li{
-        font-size: 0.8em;
-    }
-}
+#rol{ color: rgb(27, 119, 93);
+    list-style:none;
+    font-weight:bolder;
+        }
