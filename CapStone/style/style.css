@@ -86,6 +86,14 @@ body {
     font-size: 1.2em;
     font-weight: 700;
 }
+.contact-section a{
+    color: #00ffff;
+    
+    }
+a:any-link{
+    text-decoration: none;
+    font-style: normal;
+}
 
 .contact-section ul {
     list-style: none;
