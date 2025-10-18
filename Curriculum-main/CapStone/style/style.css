@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+.resume-container {
+    display: flex;
+    width: 95%; 
+    max-width: 900px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px; 
+}
+
+.left-column {
+    width: 35%;
+    background-color: #004d40; 
+    color: #ffffff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    border: 5px solid #00695c; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-section h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.profile-section h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #b2dfdb; 
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #e0f2f1; 
+}
+
+.contact-section,
+.education-section,
+.award-section ,.other-section , .projects-section{
+    margin-bottom: 30px;
+}
+
+.contact-section h3,
+.education-section h3,
+.award-section h3 , .other-section h3 , .projects-section h3 {
+    background-color: #00695c; 
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.contact-section a{
+    color: #00ffff;
+    
+    }
+a:any-link{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #e0f2f1;
+}
+
+.contact-section ul li i {
+    margin-right: 10px;
+    color: #b2dfdb;
+}
+
+.education-item,
+.award-item , .leguage-item {
+    margin-bottom: 15px;
+}
+a:any-link {
+    text-decoration: none;
+    font-style: normal;
+}
+.project-item a{
+    color: #00ffff;
+    
+    }
+
+.education-item h4,
+.award-item h4 , .leguage-item h4 , .projects-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #b2dfdb;
+}
+
+.education-item p,
+.award-item p ,.leguage-item p{
+    font-size: 0.85em;
+    color: #e0f2f1;
+}
+
+.right-column {
+    width: 65%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.work-experience-section,
+.skills-section , .proyects-section{
+    margin-bottom: 30px;
+}
+
+.work-experience-section h3,
+.skills-section h3 , .proyects-section h3{
+    background-color: #26a69a; 
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.experience-item , .proyect-item{
+    margin-bottom: 20px;
+}
+
+.experience-item h4 , .proyect-item h4{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #004d40; /* Dark teal for company names */
+}
+
+.experience-item p ,.proyect-item p {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.experience-item ul , .proyect-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-item ul li ,.proyect-item ul li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #616161;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    flex: 1;
+    font-size: 0.95em;
+    margin: 0;
+    color: #424242;
+    font-weight: 500;
+}
+
+.skill-bar {
+    width: 70%; /* Adjust as needed */
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #26a69a; /* Vibrant teal for skill level */
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        margin: 10px; 
+        border-radius: 5px; 
+    }
+    
+    .left-column,
+    .right-column {
+        width: 100%; 
+        padding: 20px; 
+    }
+    
+    .profile-section {
+        margin-bottom: 20px;
+    }
+    
+    .profile-section h1 {
+        font-size: 1.8em; 
+    }
+    
+    .profile-section h2 {
+        font-size: 1em; 
+    }
+    
+    .contact-section h3,
+    .education-section h3,
+    .award-section h3,
+    .work-experience-section h3,
+    .skills-section h3 , .proyects-section h3 ,.other-section h3{
+        text-align: center; 
+        padding: 8px 10px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-section ul li {
+        justify-content: center; 
+        text-align: center;
+    }
+    
+    .education-item,
+    .award-item,
+    .experience-item , .proyect-item,.leguage-item{
+        margin-bottom: 15px;}
+        
+        .skill-item {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .skill-item p {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+        
+        .skill-bar {
+            width: 100%; 
+            margin-left: 0; 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        body {
+            padding: 5px;
+        }
+        
+        .resume-container {
+            margin: 5px;
+            border-radius: 0;
+        }
+        
+        .left-column,
+        .right-column {
+            padding: 15px; 
+        }
+        
+        .profile-picture {
+            width: 100px; 
+            height: 100px;
+        }
+        
+        .profile-section h1 {
+            font-size: 1.5em;
+        }
+        
+        .profile-section h2 {
+            font-size: 0.9em; 
+        }
+        
+        .profile-section p,
+        .contact-section ul li,
+        .education-item p,.leguage-item p,
+        .award-item p,
+        .experience-item p,
+        .experience-item ul li,
+        .skill-item p , .proyect-item p , .proyect-item ul li{
+            font-size: 0.8em;
+        }
+}
+#rol{ color: rgb(27, 119, 93);
+    list-style:none;
+    font-weight:bolder;
+        }
