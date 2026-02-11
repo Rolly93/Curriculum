@@ -21,6 +21,9 @@ body {
     overflow: hidden;
     margin: 20px; 
 }
+.skills-list{
+    padding: 10px 0;
+}
 
 .left-column {
     width: 35%;
@@ -318,4 +321,5 @@ a:any-link{
 #rol{ color: rgb(27, 119, 93);
     list-style:none;
     font-weight:bolder;
+
         }
